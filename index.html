@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Senga atalgan maxsus sevgi taklifi 💕">
+  <title>Senga bir savolim bor... 💕</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <nav class="scroll-indicator" id="scrollNav" aria-label="Sahifa navigatsiyasi">
+    <div class="scroll-dot active" data-scene="0" title="Kirish"></div>
+    <div class="scroll-dot" data-scene="1" title="Yulduzli tun"></div>
+    <div class="scroll-dot" data-scene="2" title="Yurakdagi gaplar"></div>
+    <div class="scroll-dot" data-scene="3" title="Maktub"></div>
+    <div class="scroll-dot" data-scene="4" title="Xotiralar"></div>
+    <div class="scroll-dot" data-scene="5" title="Yakun"></div>
+  </nav>
+
+  <!-- 1-SAHNA -->
+  <section class="scene scene-1" id="scene-1">
+
+    <div class="big-heart-bg" aria-hidden="true">♡</div>
+    <div class="petals-container" id="petalsContainer" aria-hidden="true"></div>
+
+    <div class="scene-1-content">
+
+      <p class="opening-tagline reveal">
+        Senga aytmoqchi bo‘lgan gapim bor
+      </p>
+
+      <h1 class="opening-title reveal reveal-delay-1">
+        Senga<br>bir savolim bor
+      </h1>
+
+      <div class="typewriter-wrap">
+        <p class="typewriter-text reveal reveal-delay-2">
+          <span id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+      </div>
+
+      <div class="scroll-hint reveal reveal-delay-3">
+        <p>Hikoyamizni boshlash uchun pastga suring</p>
+        <div class="scroll-arrow"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 2-SAHNA -->
+  <section class="scene scene-2" id="scene-2">
+
+    <div class="stars-container" id="starsContainer" aria-hidden="true"></div>
+    <div class="moon" aria-hidden="true"></div>
+    <div class="floating-sparkles" id="sparklesContainer" aria-hidden="true"></div>
+
+    <div class="scene-2-content">
+
+      <blockquote class="quote reveal">
+        "Ba’zi insonlar hayotimizga<br>
+        shunchaki kirib kelmaydi."
+      </blockquote>
+
+      <p class="sub-quote reveal reveal-delay-2">
+        Sen mening hikoyamdagi eng chiroyli bobga aylanding.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 3-SAHNA -->
+  <section class="scene scene-3" id="scene-3">
+
+    <div class="scene3-ripple" id="scene3Ripple" aria-hidden="true"></div>
+    <div class="scene3-bg-particles" id="scene3BgParticles" aria-hidden="true"></div>
+
+    <div class="scene-3-content">
+
+      <p class="section-label reveal">
+        Yuragimdagi gaplar
+      </p>
+
+      <h2 class="section-title reveal reveal-delay-1">
+        Senga aytmoqchi bo‘lganlarim
+      </h2>
+
+      <div class="quote-card reveal reveal-delay-2" id="quoteCard">
+
+        <div class="quote-inner">
+          <span class="quote-mark">"</span>
+
+          <p id="loveQuote"></p>
+
+          <span class="quote-mark close-quote">"</span>
+        </div>
+
+        <div class="quote-counter" id="quoteCounter">
+          1 / 8
+        </div>
+
+      </div>
+
+      <div id="petalEmitter"
+           class="petal-emitter"
+           aria-hidden="true"></div>
+
+      <button class="btn-rose reveal reveal-delay-3"
+              id="pickRoseBtn"
+              aria-label="Keyingi gapni o‘qish">
+
+        <span class="btn-icon">🌹</span>
+        <span>Yana bir gapim bor</span>
+
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- 4-SAHNA -->
+  <section class="scene scene-4" id="scene-4">
+
+    <div class="scene-4-content">
+
+      <p class="section-label reveal">
+        Yuragimdan senga
+      </p>
+
+      <h2 class="section-title reveal reveal-delay-1">
+        Senga maktub
+      </h2>
+
+      <div class="envelope-wrap reveal reveal-delay-2">
+
+        <div class="envelope"
+             id="envelope"
+             role="button"
+             aria-label="Maktubni ochish"
+             tabindex="0">
+
+          <div class="envelope-flap"></div>
+
+          <div class="envelope-body">
+
+            <div class="envelope-bottom-left"></div>
+            <div class="envelope-bottom-right"></div>
+
+            <div class="wax-seal" aria-hidden="true">
+              ♥
+            </div>
+
+          </div>
+        </div>
+
+        <p class="reveal reveal-delay-3"
+           style="margin-top:1rem;font-family:var(--font-serif);font-style:italic;color:var(--rose-gold);">
+          Maktubni ochish uchun bosing 💌
+        </p>
+
+      </div>
+
+
+      <div class="letter-paper" id="letterPaper">
+
+        <div class="corner-rose" aria-hidden="true">
+          🌹
+        </div>
+
+        <div class="letter-lines">
+
+          <span class="letter-heading" id="letterHeading"></span>
+
+          <p class="letter-body" id="letterBody"></p>
+
+          <p class="letter-sign" id="letterSign">
+            Butun mehrim bilan 💕
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 5-SAHNA -->
+  <section class="scene scene-5" id="scene-5">
+
+    <div class="scene-5-content">
+
+      <p class="section-label reveal">
+        Bizga atalgan lahzalar
+      </p>
+
+      <h2 class="section-title reveal reveal-delay-1">
+        Go‘zal lahzalar
+      </h2>
+
+      <div class="carousel-stage reveal reveal-delay-2">
+
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-card" data-index="0">
+            <img src="./Images/carousel_1.png"
+                 alt="Go‘zal lahza">
+
+            <p class="card-caption">
+              "Har bir go‘zal lahza yangi xotiraning boshlanishidir 🌅"
+            </p>
+          </div>
+
+
+          <div class="carousel-card" data-index="1">
+            <img src="./Images/carousel_2.png"
+                 alt="Atirgullar">
+
+            <p class="card-caption">
+              "Sen mening hayotimdagi eng go‘zal uchrashuvlardan birisan 🌹"
+            </p>
+          </div>
+
+
+          <div class="carousel-card active" data-index="2">
+            <img src="./Images/carousel_3.png"
+                 alt="Birga ushlangan qo‘llar">
+
+            <p class="card-caption">
+              "Sen bilan birga yana ko‘p go‘zal lahzalarni istayman 🤝"
+            </p>
+          </div>
+
+
+          <div class="carousel-card" data-index="3">
+            <img src="./Images/carousel_4.png"
+                 alt="Chiroqlar">
+
+            <p class="card-caption">
+              "Sen mening kunlarimga o‘zgacha nur olib kirding ✨"
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="carousel-controls reveal reveal-delay-3">
+
+        <button class="carousel-btn"
+                id="prevBtn"
+                aria-label="Oldingi xotira">
+
+          <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <div class="carousel-dots" id="carouselDots">
+
+          <div class="carousel-dot" data-dot="0"></div>
+          <div class="carousel-dot" data-dot="1"></div>
+          <div class="carousel-dot active" data-dot="2"></div>
+          <div class="carousel-dot" data-dot="3"></div>
+
+        </div>
+
+
+        <button class="carousel-btn"
+                id="nextBtn"
+                aria-label="Keyingi xotira">
+
+          <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 6-SAHNA -->
+  <section class="scene scene-6" id="scene-6">
+
+    <div class="confetti-container"
+         id="confettiContainer"
+         aria-hidden="true">
+    </div>
+
+
+    <div class="scene-6-content">
+
+      <span class="big-heart" aria-hidden="true">
+        💕
+      </span>
+
+
+      <h2 class="finale-title">
+        Menda senga bir savol bor
+      </h2>
+
+
+      <p class="finale-sub">
+        Bu savolga javobing men uchun juda muhim 💕
+      </p>
+
+
+      <div class="finale-divider" aria-hidden="true">
+        <span></span>
+        <span class="divider-heart">♥</span>
+        <span></span>
+      </div>
+
+
+      <div class="finale-poem">
+
+        <p class="poem-line" id="poemLine1"></p>
+        <p class="poem-line" id="poemLine2"></p>
+        <p class="poem-line" id="poemLine3"></p>
+        <p class="poem-line" id="poemLine4"></p>
+
+      </div>
+
+
+      <div class="finale-notes">
+
+        <div class="note-card note-1">
+          <span>🌹</span>
+
+          <p>
+            Sen bilan o‘tgan har bir kun<br>
+            men uchun qadrli
+          </p>
+        </div>
+
+
+        <div class="note-card note-2">
+          <span>💌</span>
+
+          <p>
+            Sen bor joyda<br>
+            qalbim xotirjam
+          </p>
+        </div>
+
+
+        <div class="note-card note-3">
+          <span>✨</span>
+
+          <p>
+            Sen mening kunlarimga<br>
+            o‘zgacha ma’no berding
+          </p>
+        </div>
+
+      </div>
+
+
+      <p class="finale-signature" id="finaleSignature"></p>
+
+
+      <!-- SEVGI TAKLIFI -->
+
+      <div class="proposal-actions" id="proposalActions">
+
+        <p class="proposal-question">
+          Men bilan birga bo‘lasanmi? ❤️
+        </p>
+
+
+        <div class="proposal-buttons">
+
+          <button class="proposal-btn proposal-yes"
+                  id="proposalYes">
+            HA ❤️
+          </button>
+
+
+          <button class="proposal-btn proposal-no"
+                  id="proposalNo">
+            YO‘Q 🤍
+          </button>
+
+        </div>
+
+
+        <p class="proposal-response"
+           id="proposalResponse"
+           aria-live="polite">
+        </p>
+
+      </div>
+
+
+      <button class="btn-restart"
+              id="restartBtn"
+              aria-label="Boshiga qaytish">
+
+        <i class="fa-solid fa-rotate-left"></i>
+        Boshidan boshlash
+
+      </button>
+
+    </div>
+  </section>
+
+
+
+<script>
+
+  /* CURSOR */
+
+  const cursor = document.getElementById('cursor');
+  const cursorDot = document.getElementById('cursorDot');
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let cursorX = 0;
+  let cursorY = 0;
+
+
+  document.addEventListener('mousemove', (e) => {
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    cursorDot.style.left = mouseX + 'px';
+    cursorDot.style.top = mouseY + 'px';
+
+    if (Math.random() < 0.04) {
+      spawnHeart(mouseX, mouseY);
+    }
+
+  });
+
+
+  function animateCursor() {
+
+    cursorX += (mouseX - cursorX) * 0.12;
+    cursorY += (mouseY - cursorY) * 0.12;
+
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+
+    requestAnimationFrame(animateCursor);
+
+  }
+
+  animateCursor();
+
+
+  /* FLOATING HEARTS */
+
+  const heartChars = [
+    '♥',
+    '💕',
+    '💖',
+    '💗',
+    '💓'
+  ];
+
+
+  function spawnHeart(x, y) {
+
+    const h = document.createElement('div');
+
+    h.className = 'heart-cursor';
+
+    h.textContent =
+      heartChars[
+        Math.floor(Math.random() * heartChars.length)
+      ];
+
+    h.style.left =
+      (x + Math.random() * 30 - 15) + 'px';
+
+    h.style.top =
+      (y + Math.random() * 30 - 15) + 'px';
+
+    h.style.fontSize =
+      (Math.random() * 12 + 12) + 'px';
+
+    document.body.appendChild(h);
+
+    setTimeout(() => h.remove(), 1200);
+
+  }
+
+
+  /* 1-SAHNA PETALS */
+
+  const petalColors = [
+
+    'radial-gradient(ellipse at 30% 30%, #fce4ec, #f48fb1)',
+
+    'radial-gradient(ellipse at 30% 30%, #f8bbd0, #f06292)',
+
+    'radial-gradient(ellipse at 30% 30%, #fce4ec, #ec407a)',
+
+    'radial-gradient(ellipse at 30% 30%, #fff9c4, #ffe082)',
+
+    'radial-gradient(ellipse at 30% 30%, #fce4ec, #e1a0b8)'
+
+  ];
+
+
+  const container =
+    document.getElementById('petalsContainer');
+
+
+  for (let i = 0; i < 30; i++) {
+
+    const p = document.createElement('div');
+
+    p.className = 'petal';
+
+    p.style.left =
+      Math.random() * 100 + 'vw';
+
+    p.style.animationDuration =
+      (Math.random() * 6 + 5) + 's';
+
+    p.style.animationDelay =
+      (Math.random() * 10) + 's';
+
+    p.style.background =
+      petalColors[
+        Math.floor(Math.random() * petalColors.length)
+      ];
+
+    p.style.width =
+      (Math.random() * 12 + 12) + 'px';
+
+    p.style.height =
+      (Math.random() * 14 + 14) + 'px';
+
+    p.style.opacity =
+      Math.random() * 0.4 + 0.5;
+
+    container.appendChild(p);
+
+  }
+
+
+  /* 1-SAHNA TYPEWRITER */
+
+  const quotes = [
+
+    "Bu hikoyaning eng chiroyli qismi — sensan...",
+
+    "...va endi senga yuragimdagi savolni bermoqchiman. 💕"
+
+  ];
+
+
+  const typedEl =
+    document.getElementById('typedText');
+
+
+  let qIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+
+
+  function typeLoop() {
+
+    const current = quotes[qIdx];
+
+
+    if (!isDeleting) {
+
+      typedEl.textContent =
+        current.slice(0, charIdx + 1);
+
+      charIdx++;
+
+
+      if (charIdx === current.length) {
+
+        if (qIdx === quotes.length - 1) {
+          return;
+        }
+
+        setTimeout(() => {
+
+          isDeleting = true;
+          typeLoop();
+
+        }, 2000);
+
+        return;
+      }
+
+    } else {
+
+      typedEl.textContent =
+        current.slice(0, charIdx - 1);
+
+      charIdx--;
+
+
+      if (charIdx === 0) {
+
+        isDeleting = false;
+
+        qIdx =
+          (qIdx + 1) % quotes.length;
+
+      }
+
+    }
+
+
+    const speed =
+      isDeleting ? 40 : 70;
+
+    setTimeout(typeLoop, speed);
+
+  }
+
+
+  setTimeout(typeLoop, 2200);
+
+
+
+  /* 2-SAHNA STARS */
+
+  const starsEl =
+    document.getElementById('starsContainer');
+
+
+  const starColors = [
+    '#fff0f5',
+    '#ffd6e7',
+    '#ffb3cc',
+    '#ffffff',
+    '#ffe4ed'
+  ];
+
+
+  for (let i = 0; i < 80; i++) {
+
+    const s = document.createElement('div');
+
+    s.className = 'star';
+
+    s.style.left =
+      Math.random() * 100 + '%';
+
+    s.style.top =
+      Math.random() * 100 + '%';
+
+    s.style.animationDuration =
+      (Math.random() * 3 + 1.5) + 's';
+
+    s.style.animationDelay =
+      (Math.random() * 4) + 's';
+
+    s.style.width =
+      s.style.height =
+      (Math.random() * 3 + 1) + 'px';
+
+    s.style.background =
+      starColors[
+        Math.floor(Math.random() * starColors.length)
+      ];
+
+    starsEl.appendChild(s);
+
+  }
+
+
+  document.getElementById('scene-2')
+    .addEventListener('mousemove', (e) => {
+
+      const rect =
+        e.currentTarget.getBoundingClientRect();
+
+      const cx =
+        (e.clientX - rect.left - rect.width / 2)
+        / rect.width;
+
+      const cy =
+        (e.clientY - rect.top - rect.height / 2)
+        / rect.height;
+
+      starsEl.style.transform =
+        `translate(${cx * 20}px, ${cy * 20}px)`;
+
+    });
+
+
+  /* SPARKLES */
+
+  const sparkleEl =
+    document.getElementById('sparklesContainer');
+
+
+  const sparkleChars = [
+    '✦',
+    '✧',
+    '✨',
+    '⋆',
+    '✵'
+  ];
+
+
+  for (let i = 0; i < 12; i++) {
+
+    const sp =
+      document.createElement('span');
+
+    sp.textContent =
+      sparkleChars[
+        Math.floor(Math.random() * sparkleChars.length)
+      ];
+
+    sp.style.left =
+      Math.random() * 90 + 5 + '%';
+
+    sp.style.top =
+      Math.random() * 90 + 5 + '%';
+
+    sp.style.animationDuration =
+      (Math.random() * 3 + 2) + 's';
+
+    sp.style.animationDelay =
+      (Math.random() * 3) + 's';
+
+    sp.style.color =
+      ['#fff', '#fda4af', '#f0d5a0']
+      [Math.floor(Math.random() * 3)];
+
+    sparkleEl.appendChild(sp);
+
+  }
+
+
+
+  /* 3-SAHNA QUOTES */
+
+  const loveQuotes = [
+
+    "Sen bilan o‘tgan har bir lahza men uchun alohida qadrlidir.",
+
+    "Sen bilan kelajak haqida o‘ylash menga yoqadi.",
+
+    "Seni taniganim sari seni yanada ko‘proq qadrlayapman.",
+
+    "Sen qalbimda o‘zgacha joy egallab ulgurding.",
+
+    "Sen bilan o‘zimni xotirjam va baxtli his qilaman.",
+
+    "Sening tabassuming kunimni chiroyli qiladi.",
+
+    "Oddiy suhbatlarimiz ham men uchun qadrli.",
+
+    "Shuning uchun bugun sendan bir narsani so‘ramoqchiman..."
+
+  ];
+
+
+  let currentQuote = 0;
+  let quoteTyping = false;
+
+
+  const quoteEl =
+    document.getElementById('loveQuote');
+
+  const quoteCard =
+    document.getElementById('quoteCard');
+
+  const quoteCounter =
+    document.getElementById('quoteCounter');
+
+  const roseBtn =
+    document.getElementById('pickRoseBtn');
+
+  const petalEmitter =
+    document.getElementById('petalEmitter');
+
+  const scene3 =
+    document.getElementById('scene-3');
+
+  const scene3Ripple =
+    document.getElementById('scene3Ripple');
+
+  const scene3BgParts =
+    document.getElementById('scene3BgParticles');
+
+
+  function typeQuote(el, text, speed, onDone) {
+
+    el.textContent = '';
+
+    let i = 0;
+
+    const iv =
+      setInterval(() => {
+
+        el.textContent += text[i];
+
+        i++;
+
+        if (i >= text.length) {
+
+          clearInterval(iv);
+
+          if (onDone) onDone();
+
+        }
+
+      }, speed);
+
+  }
+
+
+  function burstPetals(btn) {
+
+    const rect =
+      btn.getBoundingClientRect();
+
+    const cx =
+      rect.left + rect.width / 2;
+
+    const cy =
+      rect.top + rect.height / 2;
+
+
+    const icons = [
+      '🌸',
+      '🌹',
+      '💕',
+      '✨',
+      '🌺',
+      '🌷',
+      '❤️',
+      '💖'
+    ];
+
+
+    for (let i = 0; i < 20; i++) {
+
+      const p =
+        document.createElement('div');
+
+      p.className = 'petal-burst';
+
+      p.textContent =
+        icons[
+          Math.floor(Math.random() * icons.length)
+        ];
+
+      p.style.left =
+        cx + 'px';
+
+      p.style.top =
+        cy + 'px';
+
+      p.style.fontSize =
+        (Math.random() * 14 + 14) + 'px';
+
+
+      const angle =
+        (Math.PI * 2 / 20) * i
+        + (Math.random() - 0.5) * 0.4;
+
+      const dist =
+        Math.random() * 140 + 80;
+
+
+      p.style.setProperty(
+        '--tx',
+        Math.cos(angle) * dist + 'px'
+      );
+
+      p.style.setProperty(
+        '--ty',
+        Math.sin(angle) * dist + 'px'
+      );
+
+
+      p.style.animationDuration =
+        (Math.random() * 0.4 + 0.8) + 's';
+
+      p.style.animationDelay =
+        (Math.random() * 0.15) + 's';
+
+
+      document.body.appendChild(p);
+
+      setTimeout(() => p.remove(), 1300);
+
+    }
+
+  }
+
+
+  function triggerBgRipple() {
+
+    const rect =
+      scene3.getBoundingClientRect();
+
+    const cx =
+      rect.width / 2;
+
+    const cy =
+      rect.height / 2;
+
+
+    [180, 320, 500].forEach((size, index) => {
+
+      const r =
+        document.createElement('div');
+
+      r.className = 'ripple-circle';
+
+      r.style.width =
+        size + 'px';
+
+      r.style.height =
+        size + 'px';
+
+      r.style.left =
+        cx + 'px';
+
+      r.style.top =
+        cy + 'px';
+
+      r.style.animationDelay =
+        index * 0.18 + 's';
+
+
+      r.style.borderColor =
+        index === 0
+          ? 'rgba(244,63,94,0.6)'
+          : index === 1
+            ? 'rgba(251,113,133,0.4)'
+            : 'rgba(253,164,175,0.25)';
+
+
+      scene3Ripple.appendChild(r);
+
+      setTimeout(
+        () => r.remove(),
+        1800 + index * 200
+      );
+
+    });
+
+  }
+
+
+  function spawnBgPetals() {
+
+    const bgIcons = [
+      '🌸',
+      '🌹',
+      '🌷',
+      '💮',
+      '🌺',
+      '💐'
+    ];
+
+
+    for (let i = 0; i < 14; i++) {
+
+      const p =
+        document.createElement('div');
+
+      p.className = 'bg-petal';
+
+      p.textContent =
+        bgIcons[
+          Math.floor(Math.random() * bgIcons.length)
+        ];
+
+      p.style.left =
+        (Math.random() * 95 + 2.5) + '%';
+
+      p.style.bottom = '-40px';
+
+      p.style.fontSize =
+        (Math.random() * 20 + 18) + 'px';
+
+      p.style.animationDuration =
+        (Math.random() * 2.5 + 2.5) + 's';
+
+      p.style.animationDelay =
+        (Math.random() * 0.8) + 's';
+
+
+      scene3BgParts.appendChild(p);
+
+      setTimeout(
+        () => p.remove(),
+        5500
+      );
+
+    }
+
+  }
+
+
+  function pulseBg() {
+
+    scene3.classList.add('bg-pulse');
+
+    setTimeout(
+      () => scene3.classList.remove('bg-pulse'),
+      700
+    );
+
+  }
+
+
+  function flashCard() {
+
+    quoteCard.style.transition = 'none';
+
+    quoteCard.style.boxShadow =
+      '0 0 0 4px rgba(244,63,94,0.6), 0 0 40px rgba(244,63,94,0.4)';
+
+    quoteCard.style.transform =
+      'scale(1.04)';
+
+
+    setTimeout(() => {
+
+      quoteCard.style.transition =
+        'all 0.6s ease';
+
+      quoteCard.style.boxShadow = '';
+
+      quoteCard.style.transform =
+        'scale(1)';
+
+    }, 120);
+
+  }
+
+
+  function initQuote() {
+    typeQuote(
+      quoteEl,
+      loveQuotes[0],
+      45
+    );
+  }
+
+
+  const q3Observer =
+    new IntersectionObserver((entries) => {
+
+      entries.forEach(entry => {
+
+        if (
+          entry.isIntersecting &&
+          quoteEl.textContent === ''
+        ) {
+          initQuote();
+        }
+
+      });
+
+    }, { threshold: 0.4 });
+
+
+  q3Observer.observe(
+    document.getElementById('scene-3')
+  );
+
+
+  roseBtn.addEventListener('click', () => {
+
+    if (quoteTyping) return;
+
+    quoteTyping = true;
+
+    burstPetals(roseBtn);
+    triggerBgRipple();
+    spawnBgPetals();
+    pulseBg();
+    flashCard();
+
+
+    quoteEl.style.transition =
+      'opacity 0.25s ease, transform 0.25s ease';
+
+    quoteEl.style.opacity = '0';
+
+    quoteEl.style.transform =
+      'translateY(-18px)';
+
+
+    setTimeout(() => {
+
+      currentQuote =
+        (currentQuote + 1)
+        % loveQuotes.length;
+
+
+      quoteCounter.style.transition =
+        'transform 0.2s ease';
+
+      quoteCounter.style.transform =
+        'scale(1.4)';
+
+      quoteCounter.textContent =
+        `${currentQuote + 1} / ${loveQuotes.length}`;
+
+
+      setTimeout(() => {
+
+        quoteCounter.style.transform =
+          'scale(1)';
+
+      }, 200);
+
+
+      quoteEl.style.transition = 'none';
+
+      quoteEl.style.transform =
+        'translateY(18px)';
+
+      quoteEl.style.opacity = '0';
+
+
+      setTimeout(() => {
+
+        quoteEl.style.transition =
+          'opacity 0.3s ease, transform 0.3s ease';
+
+        quoteEl.style.opacity = '1';
+
+        quoteEl.style.transform =
+          'translateY(0)';
+
+
+        typeQuote(
+          quoteEl,
+          loveQuotes[currentQuote],
+          40,
+          () => {
+            quoteTyping = false;
+          }
+        );
+
+      }, 60);
+
+    }, 280);
+
+
+    const icon =
+      roseBtn.querySelector('.btn-icon');
+
+
+    icon.style.transition =
+      'transform 0.5s cubic-bezier(.36,.07,.19,.97)';
+
+    icon.style.transform =
+      'rotate(360deg) scale(1.5)';
+
+
+    setTimeout(() => {
+
+      icon.style.transition = '';
+
+      icon.style.transform = '';
+
+    }, 500);
+
+  });
+
+
+
+  /* 4-SAHNA MAKTUB */
+
+  const envelope =
+    document.getElementById('envelope');
+
+  const letterPaper =
+    document.getElementById('letterPaper');
+
+  const headingEl =
+    document.getElementById('letterHeading');
+
+  const bodyEl =
+    document.getElementById('letterBody');
+
+
+  const letterHeading =
+    "Senga, yuragimdagi inson...";
+
+
+  const letterBody =
+    "Balki buni qanday aytishni uzoq o‘ylagandirman. " +
+    "Lekin bir narsani aniq bilaman: sen men uchun oddiy " +
+    "inson bo‘lib qolmading. Sen bilan gaplashish, seni ko‘rish " +
+    "va yoningda bo‘lish men uchun alohida. " +
+    "Shuning uchun bugun yuragimdagi eng muhim savolni " +
+    "senga bermoqchiman. Men bilan birga bo‘lishga rozimisan? 💕";
+
+
+  let letterOpened = false;
+  let letterTyping = false;
+
+
+  function typeText(el, text, speed, callback) {
+
+    let i = 0;
+
+    el.textContent = '';
+
+
+    const interval =
+      setInterval(() => {
+
+        el.textContent += text[i];
+
+        i++;
+
+
+        if (i >= text.length) {
+
+          clearInterval(interval);
+
+          if (callback) callback();
+
+        }
+
+      }, speed);
+
+  }
+
+
+  function openLetter() {
+
+    if (letterOpened || letterTyping) return;
+
+    letterTyping = true;
+
+    envelope.classList.add('open');
+
+
+    setTimeout(() => {
+
+      letterPaper.classList.add('revealed');
+
+
+      setTimeout(() => {
+
+        typeText(
+          headingEl,
+          letterHeading,
+          60,
+          () => {
+
+            setTimeout(() => {
+
+              typeText(
+                bodyEl,
+                letterBody,
+                25,
+                () => {
+
+                  letterPaper.classList.add(
+                    'sign-visible'
+                  );
+
+                  letterOpened = true;
+                  letterTyping = false;
+
+                }
+              );
+
+            }, 400);
+
+          }
+        );
+
+      }, 600);
+
+    }, 1000);
+
+  }
+
+
+  envelope.addEventListener(
+    'click',
+    openLetter
+  );
+
+
+  envelope.addEventListener(
+    'keydown',
+    (e) => {
+
+      if (
+        e.key === 'Enter' ||
+        e.key === ' '
+      ) {
+        openLetter();
+      }
+
+    }
+  );
+
+
+
+  /* 5-SAHNA CAROUSEL */
+
+  const cards =
+    document.querySelectorAll('.carousel-card');
+
+  const dots =
+    document.querySelectorAll('.carousel-dot');
+
+  const totalCards =
+    cards.length;
+
+  let activeIndex = 2;
+
+
+  const cardPositions = [
+
+    {
+      tx: -340,
+      rot: -8,
+      scale: 0.85,
+      z: 4
+    },
+
+    {
+      tx: -170,
+      rot: -4,
+      scale: 0.92,
+      z: 6
+    },
+
+    {
+      tx: 0,
+      rot: 0,
+      scale: 1.05,
+      z: 10
+    },
+
+    {
+      tx: 170,
+      rot: 4,
+      scale: 0.92,
+      z: 6
+    }
+
+  ];
+
+
+  function updateCarousel(center) {
+
+    activeIndex =
+      ((center % totalCards) + totalCards)
+      % totalCards;
+
+
+    cards.forEach((card, i) => {
+
+      card.classList.remove('active');
+
+
+      const offset =
+        ((i - activeIndex) + totalCards)
+        % totalCards;
+
+
+      let posIdx;
+
+
+      if (offset === 0) {
+        posIdx = 2;
+      }
+
+      else if (offset === 1) {
+        posIdx = 3;
+      }
+
+      else if (offset === totalCards - 1) {
+        posIdx = 1;
+      }
+
+      else if (offset === 2) {
+        posIdx = 3;
+      }
+
+      else {
+        posIdx = 0;
+      }
+
+
+      const pos =
+        cardPositions[posIdx];
+
+
+      card.style.transform =
+        `translateX(${pos.tx}px) ` +
+        `rotate(${pos.rot}deg) ` +
+        `scale(${pos.scale})`;
+
+
+      card.style.zIndex =
+        pos.z;
+
+
+      card.style.opacity =
+        (offset <= 1 ||
+         offset >= totalCards - 1)
+          ? '1'
+          : '0.5';
+
+    });
+
+
+    cards[activeIndex]
+      .classList.add('active');
+
+
+    dots.forEach((dot, i) => {
+
+      dot.classList.toggle(
+        'active',
+        i === activeIndex
+      );
+
+    });
+
+  }
+
+
+  document
+    .getElementById('prevBtn')
+    .addEventListener(
+      'click',
+      () => updateCarousel(activeIndex - 1)
+    );
+
+
+  document
+    .getElementById('nextBtn')
+    .addEventListener(
+      'click',
+      () => updateCarousel(activeIndex + 1)
+    );
+
+
+  dots.forEach(dot => {
+
+    dot.addEventListener(
+      'click',
+      () => updateCarousel(+dot.dataset.dot)
+    );
+
+  });
+
+
+  cards.forEach(card => {
+
+    card.addEventListener(
+      'click',
+      () => {
+
+        const idx =
+          +card.dataset.index;
+
+        if (idx !== activeIndex) {
+          updateCarousel(idx);
+        }
+
+      }
+    );
+
+  });
+
+
+  let touchStartX = 0;
+
+  const carouselTrack =
+    document.getElementById('carouselTrack');
+
+
+  carouselTrack.addEventListener(
+    'touchstart',
+    (e) => {
+      touchStartX =
+        e.touches[0].clientX;
+    },
+    { passive: true }
+  );
+
+
+  carouselTrack.addEventListener(
+    'touchend',
+    (e) => {
+
+      const diff =
+        touchStartX -
+        e.changedTouches[0].clientX;
+
+
+      if (Math.abs(diff) > 50) {
+
+        updateCarousel(
+          diff > 0
+            ? activeIndex + 1
+            : activeIndex - 1
+        );
+
+      }
+
+    }
+  );
+
+
+
+  /* 6-SAHNA */
+
+  const confettiColors = [
+    '#fb7185',
+    '#fda4af',
+    '#f43f5e',
+    '#d4a574',
+    '#fce4ec',
+    '#f0d5a0',
+    '#e879a2',
+    '#fbbf24'
+  ];
+
+
+  const confettiEl =
+    document.getElementById(
+      'confettiContainer'
+    );
+
+
+  const poemLines = [
+
+    "Senda qalbimga yaqin insonni topdim,",
+
+    "Sen bilan o‘zimni boshqacha baxtli his qildim.",
+
+    "Agar sen ham xohlasang, oldinda hali ko‘p go‘zal kunlar bor.",
+
+    "Shuning uchun sendan so‘rayman: men bilan birga bo‘lasanmi? ❤️"
+
+  ];
+
+
+  const signatureText =
+    "— Endi javobingni kutaman 💕";
+
+
+  let poemStarted = false;
+
+
+  function typeLineSequential(
+    lines,
+    els,
+    speed,
+    lineDelay,
+    onAllDone
+  ) {
+
+    let li = 0;
+
+
+    function nextLine() {
+
+      if (li >= lines.length) {
+
+        if (onAllDone) {
+          onAllDone();
+        }
+
+        return;
+      }
+
+
+      let ci = 0;
+
+      const el = els[li];
+
+      el.textContent = '';
+
+
+      const iv =
+        setInterval(() => {
+
+          el.textContent +=
+            lines[li][ci];
+
+          ci++;
+
+
+          if (
+            ci >=
+            lines[li].length
+          ) {
+
+            clearInterval(iv);
+
+            li++;
+
+            setTimeout(
+              nextLine,
+              lineDelay
+            );
+
+          }
+
+        }, speed);
+
+    }
+
+
+    nextLine();
+
+  }
+
+
+  function startYakunPoem() {
+
+    if (poemStarted) return;
+
+    poemStarted = true;
+
+
+    const lineEls = [
+
+      document.getElementById(
+        'poemLine1'
+      ),
+
+      document.getElementById(
+        'poemLine2'
+      ),
+
+      document.getElementById(
+        'poemLine3'
+      ),
+
+      document.getElementById(
+        'poemLine4'
+      )
+
+    ];
+
+
+    const sigEl =
+      document.getElementById(
+        'finaleSignature'
+      );
+
+
+    setTimeout(() => {
+
+      typeLineSequential(
+        poemLines,
+        lineEls,
+        38,
+        300,
+        () => {
+
+          setTimeout(() => {
+
+            let si = 0;
+
+            sigEl.textContent = '';
+
+
+            const iv =
+              setInterval(() => {
+
+                sigEl.textContent +=
+                  signatureText[si];
+
+                si++;
+
+
+                if (
+                  si >=
+                  signatureText.length
+                ) {
+                  clearInterval(iv);
+                }
+
+              }, 55);
+
+          }, 600);
+
+        }
+      );
+
+    }, 2200);
+
+  }
+
+
+
+  function createConfetti() {
+
+    confettiEl.innerHTML = '';
+
+
+    for (let i = 0; i < 32; i++) {
+
+      const c =
+        document.createElement('div');
+
+      c.className =
+        'confetti-piece';
+
+
+      c.style.left =
+        Math.random() * 100 + 'vw';
+
+      c.style.top =
+        '-20px';
+
+
+      c.style.background =
+        confettiColors[
+          Math.floor(
+            Math.random() *
+            confettiColors.length
+          )
+        ];
+
+
+      c.style.width =
+        (Math.random() * 8 + 6) + 'px';
+
+      c.style.height =
+        (Math.random() * 8 + 6) + 'px';
+
+
+      c.style.borderRadius =
+        Math.random() > 0.5
+          ? '50%'
+          : '2px';
+
+
+      c.style.animationDuration =
+        (Math.random() * 4 + 4) + 's';
+
+
+      c.style.animationDelay =
+        (Math.random() * 5) + 's';
+
+
+      c.style.setProperty(
+        '--cx',
+        (Math.random() * 100 - 50) + 'px'
+      );
+
+
+      confettiEl.appendChild(c);
+
+    }
+
+  }
+
+
+
+  /* HA / YO‘Q */
+
+  const proposalYes =
+    document.getElementById(
+      'proposalYes'
+    );
+
+
+  const proposalNo =
+    document.getElementById(
+      'proposalNo'
+    );
+
+
+  const proposalResponse =
+    document.getElementById(
+      'proposalResponse'
+    );
+
+
+  proposalYes.addEventListener(
+    'click',
+    () => {
+
+      proposalYes.classList.add(
+        'selected'
+      );
+
+      proposalNo.classList.remove(
+        'selected'
+      );
+
+
+      proposalResponse.textContent =
+        "Javobing uchun rahmat ❤️";
+
+
+      createConfetti();
+
+    }
+  );
+
+
+  proposalNo.addEventListener(
+    'click',
+    () => {
+
+      proposalNo.classList.add(
+        'selected'
+      );
+
+      proposalYes.classList.remove(
+        'selected'
+      );
+
+
+      proposalResponse.textContent =
+        "Tushunaman 🤍 Javobingni hurmat qilaman.";
+
+    }
+  );
+
+
+
+  /* RESTART */
+
+  document
+    .getElementById('restartBtn')
+    .addEventListener(
+      'click',
+      () => {
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+
+      }
+    );
+
+
+
+  /* NAVIGATION */
+
+  const scenes =
+    document.querySelectorAll('.scene');
+
+
+  const navDots =
+    document.querySelectorAll('.scroll-dot');
+
+
+  const sceneIds = [
+    'scene-1',
+    'scene-2',
+    'scene-3',
+    'scene-4',
+    'scene-5',
+    'scene-6'
+  ];
+
+
+  navDots.forEach(dot => {
+
+    dot.addEventListener(
+      'click',
+      () => {
+
+        const sceneIdx =
+          +dot.dataset.scene;
+
+
+        document
+          .getElementById(
+            sceneIds[sceneIdx]
+          )
+          .scrollIntoView({
+            behavior: 'smooth'
+          });
+
+      }
+    );
+
+  });
+
+
+
+  /* SCENE OBSERVER */
+
+  const sceneObserver =
+    new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+
+          const id =
+            entry.target.id;
+
+
+          const idx =
+            sceneIds.indexOf(id);
+
+
+          navDots.forEach((dot, i) => {
+
+            dot.classList.toggle(
+              'active',
+              i === idx
+            );
+
+          });
+
+
+          if (id === 'scene-6') {
+
+            createConfetti();
+
+            startYakunPoem();
+
+          }
+
+
+          if (id === 'scene-2') {
+
+            document
+              .querySelector('.moon')
+              .style.animation = 'none';
+
+
+            setTimeout(() => {
+
+              document
+                .querySelector('.moon')
+                .style.animation = '';
+
+            }, 10);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.5
+      }
+    );
+
+
+  scenes.forEach(
+    scene => sceneObserver.observe(scene)
+  );
+
+
+
+  /* REVEAL */
+
+  const revealObserver =
+    new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (
+            entry.isIntersecting
+          ) {
+
+            entry.target
+              .classList
+              .add('visible');
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+
+  document
+    .querySelectorAll('.reveal')
+    .forEach(
+      el => revealObserver.observe(el)
+    );
+
+
+
+  /* CAROUSEL START */
+
+  updateCarousel(2);
+
+</script>
+
+</body>
+</html>
